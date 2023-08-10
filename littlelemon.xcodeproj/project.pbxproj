@@ -7,15 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0635BD2A7FCF1D003677D1 /* JSONMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0635BC2A7FCF1D003677D1 /* JSONMenu.swift */; };
+		5C0635BF2A7FD137003677D1 /* DishesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0635BE2A7FD137003677D1 /* DishesModel.swift */; };
+		5C0635C52A7FD443003677D1 /* Dish+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0635C42A7FD443003677D1 /* Dish+Extension.swift */; };
+		5C0635C72A7FD615003677D1 /* Dish+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0635C62A7FD615003677D1 /* Dish+CoreDataClass.swift */; };
+		5C0635C92A7FD670003677D1 /* Dish+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0635C82A7FD670003677D1 /* Dish+CoreDataProperties.swift */; };
+		5C0635CB2A7FD928003677D1 /* FetchedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0635CA2A7FD928003677D1 /* FetchedObjects.swift */; };
+		5C0635CD2A7FD995003677D1 /* DisplayDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0635CC2A7FD995003677D1 /* DisplayDish.swift */; };
+		5C0635D12A83E73F003677D1 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0635D02A83E73F003677D1 /* Onboarding.swift */; };
+		5C0635D32A83EB13003677D1 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0635D22A83EB13003677D1 /* String+Extensions.swift */; };
+		5C0635D52A8462CE003677D1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0635D42A8462CE003677D1 /* Home.swift */; };
+		5C0635D72A84637D003677D1 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0635D62A84637D003677D1 /* Menu.swift */; };
 		5C14A8432A7E301800FD2FA4 /* littlelemonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14A8422A7E301800FD2FA4 /* littlelemonApp.swift */; };
 		5C14A8452A7E301800FD2FA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14A8442A7E301800FD2FA4 /* ContentView.swift */; };
 		5C14A8472A7E301B00FD2FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C14A8462A7E301B00FD2FA4 /* Assets.xcassets */; };
 		5C14A84A2A7E301B00FD2FA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C14A8492A7E301B00FD2FA4 /* Preview Assets.xcassets */; };
 		5C14A84C2A7E301B00FD2FA4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14A84B2A7E301B00FD2FA4 /* Persistence.swift */; };
 		5C14A84F2A7E301B00FD2FA4 /* littlelemon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C14A84D2A7E301B00FD2FA4 /* littlelemon.xcdatamodeld */; };
+		5CED88932A85342200525E28 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED88922A85342200525E28 /* UserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C0635BC2A7FCF1D003677D1 /* JSONMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMenu.swift; sourceTree = "<group>"; };
+		5C0635BE2A7FD137003677D1 /* DishesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesModel.swift; sourceTree = "<group>"; };
+		5C0635C42A7FD443003677D1 /* Dish+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+Extension.swift"; sourceTree = "<group>"; };
+		5C0635C62A7FD615003677D1 /* Dish+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5C0635C82A7FD670003677D1 /* Dish+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5C0635CA2A7FD928003677D1 /* FetchedObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedObjects.swift; sourceTree = "<group>"; };
+		5C0635CC2A7FD995003677D1 /* DisplayDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDish.swift; sourceTree = "<group>"; };
+		5C0635D02A83E73F003677D1 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		5C0635D22A83EB13003677D1 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		5C0635D42A8462CE003677D1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		5C0635D62A84637D003677D1 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		5C14A83F2A7E301800FD2FA4 /* littlelemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = littlelemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C14A8422A7E301800FD2FA4 /* littlelemonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = littlelemonApp.swift; sourceTree = "<group>"; };
 		5C14A8442A7E301800FD2FA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +46,7 @@
 		5C14A8492A7E301B00FD2FA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C14A84B2A7E301B00FD2FA4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		5C14A84E2A7E301B00FD2FA4 /* littlelemon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = littlelemon.xcdatamodel; sourceTree = "<group>"; };
+		5CED88922A85342200525E28 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +81,20 @@
 			children = (
 				5C14A8422A7E301800FD2FA4 /* littlelemonApp.swift */,
 				5C14A8442A7E301800FD2FA4 /* ContentView.swift */,
+				5C0635D02A83E73F003677D1 /* Onboarding.swift */,
+				5C0635D42A8462CE003677D1 /* Home.swift */,
+				5C0635D62A84637D003677D1 /* Menu.swift */,
+				5CED88922A85342200525E28 /* UserProfile.swift */,
+				5C0635BC2A7FCF1D003677D1 /* JSONMenu.swift */,
 				5C14A8462A7E301B00FD2FA4 /* Assets.xcassets */,
 				5C14A84B2A7E301B00FD2FA4 /* Persistence.swift */,
+				5C0635BE2A7FD137003677D1 /* DishesModel.swift */,
+				5C0635D22A83EB13003677D1 /* String+Extensions.swift */,
+				5C0635C42A7FD443003677D1 /* Dish+Extension.swift */,
+				5C0635C62A7FD615003677D1 /* Dish+CoreDataClass.swift */,
+				5C0635CC2A7FD995003677D1 /* DisplayDish.swift */,
+				5C0635CA2A7FD928003677D1 /* FetchedObjects.swift */,
+				5C0635C82A7FD670003677D1 /* Dish+CoreDataProperties.swift */,
 				5C14A84D2A7E301B00FD2FA4 /* littlelemon.xcdatamodeld */,
 				5C14A8482A7E301B00FD2FA4 /* Preview Content */,
 			);
@@ -144,9 +180,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C14A84C2A7E301B00FD2FA4 /* Persistence.swift in Sources */,
+				5C0635D32A83EB13003677D1 /* String+Extensions.swift in Sources */,
 				5C14A84F2A7E301B00FD2FA4 /* littlelemon.xcdatamodeld in Sources */,
+				5C0635BD2A7FCF1D003677D1 /* JSONMenu.swift in Sources */,
+				5C0635CD2A7FD995003677D1 /* DisplayDish.swift in Sources */,
+				5C0635BF2A7FD137003677D1 /* DishesModel.swift in Sources */,
+				5C0635D52A8462CE003677D1 /* Home.swift in Sources */,
+				5C0635C52A7FD443003677D1 /* Dish+Extension.swift in Sources */,
+				5C0635D12A83E73F003677D1 /* Onboarding.swift in Sources */,
+				5C0635D72A84637D003677D1 /* Menu.swift in Sources */,
 				5C14A8452A7E301800FD2FA4 /* ContentView.swift in Sources */,
 				5C14A8432A7E301800FD2FA4 /* littlelemonApp.swift in Sources */,
+				5CED88932A85342200525E28 /* UserProfile.swift in Sources */,
+				5C0635C72A7FD615003677D1 /* Dish+CoreDataClass.swift in Sources */,
+				5C0635CB2A7FD928003677D1 /* FetchedObjects.swift in Sources */,
+				5C0635C92A7FD670003677D1 /* Dish+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
