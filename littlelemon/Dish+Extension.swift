@@ -18,12 +18,10 @@ extension Dish {
                 continue
             }
             let oneDish = Dish(context: context)
-            oneDish.name = menuItem.title
-            if let price = Float(menuItem.price) {
-                oneDish.price = price
-            }
-//            oneDish.dishDescription = menuItem.description
-//            oneDish.image = menuItem.image
+            oneDish.title = menuItem.title
+            oneDish.price = menuItem.price
+            oneDish.dishDescription = menuItem.description
+            oneDish.image = menuItem.image
         }
     }
     

@@ -16,7 +16,7 @@ struct DisplayDish: View {
     
     var body: some View {
         HStack{
-            Text(dish.name ?? "")
+            Text(dish.title ?? "")
                 .padding([.top, .bottom], 7)
 
             Spacer()
@@ -24,6 +24,14 @@ struct DisplayDish: View {
             Text(dish.formatPrice())
                 .monospaced()
                 .font(.callout)
+            if dish.image != nil {
+                AsyncImage(url: URL(string: dish.image!)!) { image in
+                    image.resizable()
+                } placeholder: {
+                    ProgressView()
+                }
+                .frame(width: 50, height: 50).cornerRadius(5)
+            }
         }
         .contentShape(Rectangle())
     }
@@ -37,8 +45,8 @@ struct DisplayDish_Previews: PreviewProvider {
     }
     static func oneDish() -> Dish {
         let dish = Dish(context: context)
-        dish.name = "Hummus"
-        dish.price = 10
+        dish.title = "Hummus"
+        dish.price = "10"
         dish.dishDescription = "Extra Large"
         return dish
     }

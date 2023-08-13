@@ -6,14 +6,18 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct Home: View {
+    let persistenceController = PersistenceController.shared
+    
     var body: some View {
         TabView {
             Menu().tabItem {
                 Text("Menu")
                 Image(systemName: "list.dash")
-            }.navigationBarHidden(true)
+            }.environment(\.managedObjectContext, persistenceController.container.viewContext)
+            .navigationBarHidden(true)
             UserProfile().tabItem {
                 Text("Profile")
                 Image(systemName: "square.and.pencil")
