@@ -16,19 +16,24 @@ struct DisplayDish: View {
     
     var body: some View {
         HStack{
-            Text(dish.title ?? "")
-                .padding([.top, .bottom], 7)
-
+            VStack(alignment: .leading, content: {
+                Text(dish.title ?? "")
+                    .padding([.top, .bottom], 7)
+                Text(dish.dishDescription ?? "").padding([.bottom], 7)
+                Text(dish.formatPrice())
+                    .monospaced()
+                    .font(.callout)
+            })
             Spacer()
-
-            Text(dish.formatPrice())
-                .monospaced()
-                .font(.callout)
+            
             if dish.image != nil {
                 AsyncImage(url: URL(string: dish.image!)!) { image in
                     image.resizable()
                 } placeholder: {
-                    ProgressView()
+                    ZStack {
+                        LittleLemonImageView(imageName:"little-lemon-logo-grey")
+                        ProgressView()
+                    }
                 }
                 .frame(width: 50, height: 50).cornerRadius(5)
             }

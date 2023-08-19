@@ -7,22 +7,28 @@
 
 import SwiftUI
 import CoreData
+import UIKit
 
 struct Home: View {
     let persistenceController = PersistenceController.shared
     
+    init() {
+        UITabBar.appearance().isTranslucent = false
+        UITabBar.appearance().backgroundColor = UIColor(AppColors.secondary)
+    }
+    
     var body: some View {
         TabView {
             Menu().tabItem {
-                Text("Menu")
+                Text(Texts.menu)
                 Image(systemName: "list.dash")
             }.environment(\.managedObjectContext, persistenceController.container.viewContext)
-            .navigationBarHidden(true)
+                .navigationBarHidden(true)
             UserProfile().tabItem {
-                Text("Profile")
+                Text(Texts.profile)
                 Image(systemName: "square.and.pencil")
             }.navigationBarHidden(true)
-        }
+        }.accentColor(AppColors.primary).background(AppColors.secondary)
     }
 }
 

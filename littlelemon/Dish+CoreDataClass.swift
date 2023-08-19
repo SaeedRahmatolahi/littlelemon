@@ -13,7 +13,8 @@ public class Dish: NSManagedObject {
 
     func formatPrice() -> String {
         let spacing = Int(price) ?? 0 < 10 ? " " : ""
-        return "$ " + spacing + String(format: "%.2f", price)
+        let priceAmount = Double(price) ?? 0.0
+        return "$ " + spacing + String(format: "%.2f", priceAmount)
     }
     
 }

@@ -18,7 +18,6 @@
 		5C0635D52A8462CE003677D1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0635D42A8462CE003677D1 /* Home.swift */; };
 		5C0635D72A84637D003677D1 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0635D62A84637D003677D1 /* Menu.swift */; };
 		5C14A8432A7E301800FD2FA4 /* littlelemonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14A8422A7E301800FD2FA4 /* littlelemonApp.swift */; };
-		5C14A8452A7E301800FD2FA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14A8442A7E301800FD2FA4 /* ContentView.swift */; };
 		5C14A8472A7E301B00FD2FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C14A8462A7E301B00FD2FA4 /* Assets.xcassets */; };
 		5C14A84A2A7E301B00FD2FA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C14A8492A7E301B00FD2FA4 /* Preview Assets.xcassets */; };
 		5C14A84C2A7E301B00FD2FA4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14A84B2A7E301B00FD2FA4 /* Persistence.swift */; };
@@ -26,6 +25,15 @@
 		5C326E802A88702500D3BE01 /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C326E7F2A88702500D3BE01 /* MenuList.swift */; };
 		5C326E822A88750500D3BE01 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C326E812A88750500D3BE01 /* MenuItem.swift */; };
 		5C326E852A88791300D3BE01 /* ExampleDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C326E832A88791300D3BE01 /* ExampleDatabase.xcdatamodeld */; };
+		5C326E872A89E25A00D3BE01 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C326E862A89E25A00D3BE01 /* AppColors.swift */; };
+		5CCA24EE2A8DB12000448DAA /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCA24ED2A8DB12000448DAA /* CGFloat+Extensions.swift */; };
+		5CCA24F02A8EFEDC00448DAA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCA24EF2A8EFEDC00448DAA /* Constants.swift */; };
+		5CCA24F42A8F98A000448DAA /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCA24F32A8F98A000448DAA /* Texts.swift */; };
+		5CCA24F62A8F995300448DAA /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCA24F52A8F995300448DAA /* Keys.swift */; };
+		5CCA24F82A8FA0C400448DAA /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCA24F72A8FA0C400448DAA /* UserDefaults+Extensions.swift */; };
+		5CCA24FB2A8FA49B00448DAA /* LittleLemonTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCA24FA2A8FA49B00448DAA /* LittleLemonTextField.swift */; };
+		5CCA24FD2A8FAA8900448DAA /* LittleLemonImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCA24FC2A8FAA8900448DAA /* LittleLemonImageView.swift */; };
+		5CCA25002A9059D000448DAA /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCA24FF2A9059D000448DAA /* Details.swift */; };
 		5CED88932A85342200525E28 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED88922A85342200525E28 /* UserProfile.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +50,6 @@
 		5C0635D62A84637D003677D1 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		5C14A83F2A7E301800FD2FA4 /* littlelemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = littlelemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C14A8422A7E301800FD2FA4 /* littlelemonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = littlelemonApp.swift; sourceTree = "<group>"; };
-		5C14A8442A7E301800FD2FA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C14A8462A7E301B00FD2FA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C14A8492A7E301B00FD2FA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C14A84B2A7E301B00FD2FA4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -50,6 +57,15 @@
 		5C326E7F2A88702500D3BE01 /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
 		5C326E812A88750500D3BE01 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		5C326E842A88791300D3BE01 /* ExampleDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleDatabase.xcdatamodel; sourceTree = "<group>"; };
+		5C326E862A89E25A00D3BE01 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		5CCA24ED2A8DB12000448DAA /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		5CCA24EF2A8EFEDC00448DAA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5CCA24F32A8F98A000448DAA /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		5CCA24F52A8F995300448DAA /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		5CCA24F72A8FA0C400448DAA /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		5CCA24FA2A8FA49B00448DAA /* LittleLemonTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonTextField.swift; sourceTree = "<group>"; };
+		5CCA24FC2A8FAA8900448DAA /* LittleLemonImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonImageView.swift; sourceTree = "<group>"; };
+		5CCA24FF2A9059D000448DAA /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
 		5CED88922A85342200525E28 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,22 +100,20 @@
 			isa = PBXGroup;
 			children = (
 				5C14A8422A7E301800FD2FA4 /* littlelemonApp.swift */,
-				5C14A8442A7E301800FD2FA4 /* ContentView.swift */,
 				5C0635D02A83E73F003677D1 /* Onboarding.swift */,
 				5C0635D42A8462CE003677D1 /* Home.swift */,
 				5C0635D62A84637D003677D1 /* Menu.swift */,
+				5CCA24FF2A9059D000448DAA /* Details.swift */,
 				5CED88922A85342200525E28 /* UserProfile.swift */,
-				5C326E7F2A88702500D3BE01 /* MenuList.swift */,
-				5C326E812A88750500D3BE01 /* MenuItem.swift */,
-				5C14A8462A7E301B00FD2FA4 /* Assets.xcassets */,
 				5C14A84B2A7E301B00FD2FA4 /* Persistence.swift */,
-				5C0635BE2A7FD137003677D1 /* DishesModel.swift */,
-				5C0635D22A83EB13003677D1 /* String+Extensions.swift */,
-				5C0635C42A7FD443003677D1 /* Dish+Extension.swift */,
 				5C0635C62A7FD615003677D1 /* Dish+CoreDataClass.swift */,
-				5C0635CC2A7FD995003677D1 /* DisplayDish.swift */,
 				5C0635CA2A7FD928003677D1 /* FetchedObjects.swift */,
 				5C0635C82A7FD670003677D1 /* Dish+CoreDataProperties.swift */,
+				5CCA24FE2A8FAB8400448DAA /* Constants */,
+				5CCA24F92A8FA48200448DAA /* Components */,
+				5CCA24F22A8F0C1500448DAA /* Models */,
+				5CCA24F12A8F0BF900448DAA /* Extensions */,
+				5C14A8462A7E301B00FD2FA4 /* Assets.xcassets */,
 				5C14A84D2A7E301B00FD2FA4 /* littlelemon.xcdatamodeld */,
 				5C326E832A88791300D3BE01 /* ExampleDatabase.xcdatamodeld */,
 				5C14A8482A7E301B00FD2FA4 /* Preview Content */,
@@ -113,6 +127,48 @@
 				5C14A8492A7E301B00FD2FA4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5CCA24F12A8F0BF900448DAA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5C0635D22A83EB13003677D1 /* String+Extensions.swift */,
+				5C0635C42A7FD443003677D1 /* Dish+Extension.swift */,
+				5CCA24ED2A8DB12000448DAA /* CGFloat+Extensions.swift */,
+				5CCA24F72A8FA0C400448DAA /* UserDefaults+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5CCA24F22A8F0C1500448DAA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C326E7F2A88702500D3BE01 /* MenuList.swift */,
+				5C326E812A88750500D3BE01 /* MenuItem.swift */,
+				5C0635BE2A7FD137003677D1 /* DishesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5CCA24F92A8FA48200448DAA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5C0635CC2A7FD995003677D1 /* DisplayDish.swift */,
+				5CCA24FA2A8FA49B00448DAA /* LittleLemonTextField.swift */,
+				5CCA24FC2A8FAA8900448DAA /* LittleLemonImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5CCA24FE2A8FAB8400448DAA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5C326E862A89E25A00D3BE01 /* AppColors.swift */,
+				5CCA24EF2A8EFEDC00448DAA /* Constants.swift */,
+				5CCA24F52A8F995300448DAA /* Keys.swift */,
+				5CCA24F32A8F98A000448DAA /* Texts.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,13 +247,21 @@
 				5C0635CD2A7FD995003677D1 /* DisplayDish.swift in Sources */,
 				5C0635BF2A7FD137003677D1 /* DishesModel.swift in Sources */,
 				5C0635D52A8462CE003677D1 /* Home.swift in Sources */,
+				5CCA24EE2A8DB12000448DAA /* CGFloat+Extensions.swift in Sources */,
+				5CCA24F82A8FA0C400448DAA /* UserDefaults+Extensions.swift in Sources */,
+				5CCA25002A9059D000448DAA /* Details.swift in Sources */,
 				5C0635C52A7FD443003677D1 /* Dish+Extension.swift in Sources */,
 				5C0635D12A83E73F003677D1 /* Onboarding.swift in Sources */,
+				5C326E872A89E25A00D3BE01 /* AppColors.swift in Sources */,
 				5C0635D72A84637D003677D1 /* Menu.swift in Sources */,
-				5C14A8452A7E301800FD2FA4 /* ContentView.swift in Sources */,
+				5CCA24F02A8EFEDC00448DAA /* Constants.swift in Sources */,
 				5C14A8432A7E301800FD2FA4 /* littlelemonApp.swift in Sources */,
 				5C326E802A88702500D3BE01 /* MenuList.swift in Sources */,
+				5CCA24FD2A8FAA8900448DAA /* LittleLemonImageView.swift in Sources */,
+				5CCA24FB2A8FA49B00448DAA /* LittleLemonTextField.swift in Sources */,
 				5CED88932A85342200525E28 /* UserProfile.swift in Sources */,
+				5CCA24F62A8F995300448DAA /* Keys.swift in Sources */,
+				5CCA24F42A8F98A000448DAA /* Texts.swift in Sources */,
 				5C0635C72A7FD615003677D1 /* Dish+CoreDataClass.swift in Sources */,
 				5C326E822A88750500D3BE01 /* MenuItem.swift in Sources */,
 				5C326E852A88791300D3BE01 /* ExampleDatabase.xcdatamodeld in Sources */,

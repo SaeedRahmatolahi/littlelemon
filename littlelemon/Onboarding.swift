@@ -5,11 +5,6 @@
 //  Created by Saeed Rahmatolahi on 9/8/2566 BE.
 //
 
-let kFirstName = "first name key"
-let kLastName = "last name key"
-let kEmail = "Email key"
-let kIsLoggedIn = "kIsLoggedIn"
-
 import SwiftUI
 
 struct Onboarding: View {
@@ -21,29 +16,32 @@ struct Onboarding: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                NavigationLink(destination: Home(), isActive: $isLoggedIn) {
-                    EmptyView()
-                }
-                TextField("First Name", text: $firstName).disableAutocorrection(true).textFieldStyle(.roundedBorder).padding()
-                TextField("Last Name" , text: $lastName).disableAutocorrection(true).textFieldStyle(.roundedBorder).padding()
-                TextField("Email", text: $email).disableAutocorrection(true).textFieldStyle(.roundedBorder).padding()
-                Button("Register") {
-                    if !(firstName.isEmpty && lastName.isEmpty && email.isEmpty) {
-                        if email.isValidEmail {
-                            UserDefaults.standard.set(firstName, forKey: kFirstName)
-                            UserDefaults.standard.set(lastName, forKey: kLastName)
-                            UserDefaults.standard.set(email, forKey: kEmail)
-                            isLoggedIn = true
-                            UserDefaults.standard.set(true, forKey: kIsLoggedIn)
-                        }
+            ZStack {
+                AppColors.secondary
+                VStack {
+                    NavigationLink(destination: Home(), isActive: $isLoggedIn) {
+                        EmptyView()
                     }
-                }.padding(10)
-                .background(.green)
-                .foregroundColor(.yellow).cornerRadius(10)
-            }
+                    LittleLemonImageView(imageName:"little-lemon-logo-grey")
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 150, height: 150)
+                                .clipped()
+                    LittleLemonTextField(title: Texts.firstName, text: $firstName)
+                    LittleLemonTextField(title: Texts.lastName, text: $lastName)
+                    LittleLemonTextField(title: Texts.email, text: $email)
+                    Button(Texts.register) {
+                        if !(firstName.isEmpty && lastName.isEmpty && email.isEmpty) && email.isValidEmail {
+                            UserDefaults.saveUserData(firstName: firstName, lastName: lastName, email: email)
+                                isLoggedIn = true
+                            UserDefaults.save(value: true, key: Keys.kIsLoggedIn)
+                        }
+                    }.padding(10)
+                        .background(AppColors.primary)
+                        .foregroundColor(AppColors.secondary).cornerRadius(10)
+                }
+            }.ignoresSafeArea(.all)
         }.onAppear {
-            if UserDefaults.standard.bool(forKey: kIsLoggedIn) {
+            if UserDefaults.standard.bool(forKey: Keys.kIsLoggedIn) {
                 self.isLoggedIn = true
             }
         }
